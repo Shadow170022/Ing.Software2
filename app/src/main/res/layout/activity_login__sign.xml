@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/bg_color"
+
+    >
+
+    <!--
+  Font family: Another Danger - Demo
+  Line height: 72sp
+-->
+    <!-- styles.xml -->
+
+    <TextView
+        android:id="@+id/nombreApp"
+        android:layout_width="344dp"
+        android:layout_height="100dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="234dp"
+        android:layout_marginEnd="28dp"
+        android:layout_marginRight="28dp"
+        android:fontFamily="@font/another_danger"
+        android:gravity="center"
+        android:text="@string/nombre_app"
+        android:textAlignment="center"
+        android:textColor="#704577"
+        android:textSize="62sp" />
+
+    <ImageView
+        android:id="@+id/logo"
+        android:alpha="1"
+        android:layout_width="151dp"
+        android:layout_height="146dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="96dp"
+        android:layout_marginEnd="127dp"
+        android:layout_marginRight="127dp"
+        app:srcCompat="@android:drawable/ic_delete" />
+
+
+
+    <me.itangqi.waveloadingview.WaveLoadingView
+        android:id="@+id/wave"
+        android:layout_width="wrap_content"
+        android:layout_height="113dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="-1dp"
+        android:layout_marginBottom="1dp"
+        app:wlv_borderColor="@color/colorAccent"
+        app:wlv_borderWidth="0dp"
+        app:wlv_progressValue="60"
+        app:wlv_round_rectangle="false"
+        app:wlv_shapeType="rectangle"
+        app:wlv_titleTop=""
+        app:wlv_titleTopColor="@android:color/white"
+        app:wlv_titleTopSize="24sp"
+        app:wlv_titleTopStrokeColor="@android:color/holo_blue_dark"
+        app:wlv_titleTopStrokeWidth="3dp"
+        app:wlv_triangle_direction="north"
+        app:wlv_waveAmplitude="128"
+        app:wlv_waveColor="#9d87a8" />
+
+    <ImageView
+        android:id="@+id/blurScreen"
+        android:layout_width="409dp"
+        android:layout_height="731dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="-2dp"
+        android:layout_marginEnd="0dp"
+        android:alpha="0.5"
+        android:background="@drawable/bg_color" />
+
+    <TextView
+        android:id="@+id/preguntaUsuario"
+        android:layout_width="251dp"
+        android:layout_height="44dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="85dp"
+        android:layout_marginTop="332dp"
+        android:gravity="center"
+        android:text="@string/preguntaUsuario"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="22sp" />
+
+    <Button
+        android:id="@+id/botonRegistrar"
+        android:layout_width="160dp"
+        android:layout_height="58dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="224dp"
+        android:background="@drawable/roundbutton"
+        android:backgroundTint="#3E5286"
+        android:fontFamily="@font/secular_one"
+        android:text="@string/botonRegistrar"
+        android:textColor="#FFFFFF"
+        android:textSize="22dp"
+
+        />
+
+    <TextView
+        android:id="@+id/enunciadoIniciar"
+        android:layout_width="251dp"
+        android:layout_height="44dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="85dp"
+        android:layout_marginTop="527dp"
+        android:gravity="center"
+        android:text="@string/enunciadoIniciar"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="22sp" />
+
+    <Button
+        android:id="@+id/botonIniciar"
+        android:layout_width="194dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginEnd="102dp"
+        android:layout_marginBottom="26dp"
+        android:background="@drawable/roundbutton"
+        android:backgroundTint="#2AA3C9"
+        android:fontFamily="@font/secular_one"
+
+        android:text="@string/botonIniciar"
+        android:textColor="#FFFFFF"
+        android:textSize="22dp" />
+
+
+</RelativeLayout>

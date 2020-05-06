@@ -6,8 +6,46 @@
     </string>
 
     <string name="creditos_equipoDesarrollador">
+        An app By team
+    </string>
 
-An app By team
-</string>
+    <string name="preguntaUsuario">
+        ¿Eres un nuevo usuario?
+    </string>
+
+    <string name="botonRegistrar">
+        REGISTRATE
+    </string>
+
+    <string name="enunciadoIniciar">
+        ¿Ya tienes una cuenta?
+    </string>
+
+    <string name="botonIniciar">
+        INICIA SESION
+    </string>
+
+    <string name="hintNombre">
+        Introduce tu Nombre
+    </string>
+
+    <string name="hintApellido">
+        Introduce tus Apellidos
+    </string>
+
+    <string name="hintTelefono">
+        Ingresa tu numero de telefono
+    </string>
+
+    <string name="hintContrasena">
+        Introduce tu contraseña
+    </string>
+
+    <string name="hintCorreo">
+        Introduce tu correo electronico
+    </string>
+
+
+
 
 </resources>

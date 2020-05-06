@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "310142455793",
+    "firebase_url": "https://ingsoftware-3450a.firebaseio.com",
+    "project_id": "ingsoftware-3450a",
+    "storage_bucket": "ingsoftware-3450a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:310142455793:android:165544969a415e6707fe50",
+        "android_client_info": {
+          "package_name": "com.example.app1"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "310142455793-901u14qmbndpav3p6fjqu5k2lkjrjogn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAbtyxjLuQGtiQi0kjZq_S4fILxOFIOOdc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "310142455793-901u14qmbndpav3p6fjqu5k2lkjrjogn.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
