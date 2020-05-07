@@ -22,7 +22,7 @@ public class Formulario_Sign_In extends AppCompatActivity {
         button1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                openFormulario_Sign_In();
+                openEnviar_Codigo_1();
             }
         });
 
@@ -36,8 +36,8 @@ public class Formulario_Sign_In extends AppCompatActivity {
         });
     }
 
-    public void openFormulario_Sign_In(){
-        Intent intent = new Intent(this, Formulario_Sign_In.class);
+    public void openEnviar_Codigo_1(){
+        Intent intent = new Intent(this, Enviar_Codigo_1.class);
         startActivity(intent);
     }
 

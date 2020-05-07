@@ -7,37 +7,22 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-public class Formulario_Login extends AppCompatActivity {
+public class Enviar_Codigo_1 extends AppCompatActivity {
 
     private Button button1;
-    private Button button2;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_formulario_login);
-        button1= (Button) findViewById(R.id.botonRegistrar);
+        setContentView(R.layout.activity_enviar__codigo_1);
+        button1= (Button) findViewById(R.id.botonValidar);
 
         button1.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                openFormulario_Sign_In();
-            }
-        });
-
-        button2= (Button) findViewById(R.id.botonIniciar);
-
-        button2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 openLoading_Screen();
             }
         });
-    }
-
-    public void openFormulario_Sign_In(){
-        Intent intent = new Intent(this, Formulario_Sign_In.class);
-        startActivity(intent);
     }
 
     public void openLoading_Screen(){

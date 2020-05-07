@@ -21,7 +21,6 @@ public class Loading_Screen extends AppCompatActivity {
 
         mImageView = findViewById(R.id.loadingIcon);
 
-        YoYo.with(Techniques.RotateIn).duration(700).repeat(10).playOn(mImageView);
-        SystemClock.sleep(7000);
+        YoYo.with(Techniques.RubberBand).duration(800).repeat(10).playOn(mImageView);
     }
 }

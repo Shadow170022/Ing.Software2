@@ -49,5 +49,17 @@
         Introduce tu correo electronico
     </string>
 
+    <string name="enunciadoCodigo">
+        Ingresa el código que te enviamos
+    </string>
+
+    <string name="enunciadoNoCodigo">
+        No tengo un código
+    </string>
+
+    <string name="botonValidar">
+        VALIDAR
+    </string>
+
 
 </resources>
