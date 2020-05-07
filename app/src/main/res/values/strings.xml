@@ -13,6 +13,10 @@
         ¿Eres un nuevo usuario?
     </string>
 
+    <string name="preguntaContrasena">
+        ¿Olvidaste tu contraseña?
+    </string>
+
     <string name="botonRegistrar">
         REGISTRATE
     </string>
@@ -44,8 +48,6 @@
     <string name="hintCorreo">
         Introduce tu correo electronico
     </string>
-
-
 
 
 </resources>

@@ -90,68 +90,19 @@
         android:alpha="0.5"
         android:background="@drawable/bg_color" />
 
-    <TextView
-        android:id="@+id/preguntaUsuario"
-        android:layout_width="251dp"
-        android:layout_height="44dp"
-        android:layout_alignParentLeft="true"
+    <ImageView
+        android:id="@+id/loadingIcon"
+        android:layout_width="91dp"
+        android:layout_height="67dp"
         android:layout_alignParentTop="true"
-        android:layout_centerInParent="true"
-        android:layout_marginLeft="85dp"
-        android:layout_marginTop="332dp"
-        android:gravity="center"
-        android:text="@string/preguntaUsuario"
-        android:textAlignment="center"
-        android:textColor="#FFFFFF"
-        android:textSize="22sp" />
-
-    <Button
-        android:id="@+id/botonRegistrar"
-        android:layout_width="160dp"
-        android:layout_height="58dp"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="224dp"
-        android:background="@drawable/roundbutton"
-        android:backgroundTint="#3E5286"
-        android:fontFamily="@font/secular_one"
-        android:text="@string/botonRegistrar"
-        android:textColor="#FFFFFF"
-        android:textSize="22dp"
-
-        />
-
-    <TextView
-        android:id="@+id/enunciadoIniciar"
-        android:layout_width="251dp"
-        android:layout_height="44dp"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
-        android:layout_centerInParent="true"
-        android:layout_marginLeft="85dp"
-        android:layout_marginTop="527dp"
-        android:gravity="center"
-        android:text="@string/enunciadoIniciar"
-        android:textAlignment="center"
-        android:textColor="#FFFFFF"
-        android:textSize="22sp" />
-
-    <Button
-        android:id="@+id/botonIniciar"
-        android:layout_width="194dp"
-        android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginEnd="102dp"
-        android:layout_marginBottom="26dp"
-        android:background="@drawable/roundbutton"
-        android:backgroundTint="#2AA3C9"
-        android:fontFamily="@font/secular_one"
-
-        android:text="@string/botonIniciar"
-        android:textColor="#FFFFFF"
-        android:textSize="22dp" />
-
+        android:layout_marginTop="335dp"
+        android:layout_marginEnd="160dp"
+        android:layout_marginRight="160dp"
+        android:alpha="1"
+        android:tint="#000000"
+        app:srcCompat="@android:drawable/stat_notify_sync" />
 
 </RelativeLayout>

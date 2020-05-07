@@ -7,7 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-public class Login_Sign extends AppCompatActivity {
+public class Formulario_Login extends AppCompatActivity {
 
     private Button button1;
     private Button button2;
@@ -15,8 +15,7 @@ public class Login_Sign extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_login__sign);
-
+        setContentView(R.layout.activity_formulario_login);
         button1= (Button) findViewById(R.id.botonRegistrar);
 
         button1.setOnClickListener(new View.OnClickListener() {
@@ -31,7 +30,7 @@ public class Login_Sign extends AppCompatActivity {
         button2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                openFormulario_Login();
+                openLogin();
             }
         });
     }
@@ -41,8 +40,8 @@ public class Login_Sign extends AppCompatActivity {
         startActivity(intent);
     }
 
-    public void openFormulario_Login(){
-        Intent intent = new Intent(this, Formulario_Login.class);
+    public void openLogin(){
+        Intent intent = new Intent(this, Loading_Screen.class);
         startActivity(intent);
     }
 }
