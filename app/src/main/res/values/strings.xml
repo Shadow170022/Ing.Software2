@@ -45,6 +45,10 @@
         Introduce tu contraseña
     </string>
 
+    <string name="hintContrasena2">
+        Confirma tu contraseña
+    </string>
+
     <string name="hintCorreo">
         Introduce tu correo electronico
     </string>
@@ -59,6 +63,14 @@
 
     <string name="botonValidar">
         VALIDAR
+    </string>
+
+    <string name="botonRecuperar">
+        RECUPERAR
+    </string>
+
+    <string name="botonCambiar">
+        CAMBIAR
     </string>
 
 
