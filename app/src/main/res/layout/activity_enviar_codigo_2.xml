@@ -82,9 +82,9 @@
         android:layout_marginStart="18dp"
         android:layout_marginLeft="18dp"
         android:layout_marginTop="267dp"
-        android:gravity="center"
+        android:textAlignment="textStart"
         android:text="@string/enunciadoCodigo"
-        android:textAlignment="center"
+
         android:textColor="#FFFFFF"
         android:textSize="20sp" />
 
@@ -123,9 +123,9 @@
         android:layout_centerInParent="true"
         android:layout_marginLeft="82dp"
         android:layout_marginTop="426dp"
-        android:gravity="center"
+        android:textAlignment="textStart"
         android:text="@string/enunciadoNoCodigo"
-        android:textAlignment="center"
+
         android:textColor="#3E5286"
         android:textSize="22sp" />
 

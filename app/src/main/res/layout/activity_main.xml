@@ -1,16 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 
-<RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
 
     android:id="@+id/splashScreen"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
     android:background="@drawable/bg_color"
+    tools:context=".MainActivity"
 
     >
 
@@ -22,60 +21,70 @@
 
     <TextView
         android:id="@+id/nombreApp"
-        android:layout_width="344dp"
-        android:layout_height="100dp"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentRight="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="234dp"
+        android:layout_width="351dp"
+        android:layout_height="154dp"
         android:layout_marginEnd="28dp"
-        android:layout_marginRight="28dp"
         android:fontFamily="@font/another_danger"
-        android:gravity="center"
+
         android:text="@string/nombre_app"
         android:textAlignment="center"
         android:textColor="#704577"
-        android:textSize="62sp" />
+        android:textSize="62sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.384" />
 
     <TextView
         android:id="@+id/nombreEquipo"
-        android:layout_width="251dp"
-        android:layout_height="44dp"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
-        android:layout_centerInParent="true"
-        android:layout_marginLeft="85dp"
+        android:layout_width="229dp"
+        android:layout_height="42dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
         android:layout_marginTop="332dp"
-        android:gravity="center"
+
         android:text="@string/creditos_equipoDesarrollador"
         android:textAlignment="center"
         android:textColor="#FFFFFF"
-        android:textSize="22sp" />
+        android:textSize="22sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.007" />
 
     <ImageView
         android:id="@+id/logo"
         android:layout_width="151dp"
         android:layout_height="146dp"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentRight="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="96dp"
-        android:layout_marginEnd="127dp"
-        android:layout_marginRight="127dp"
+        android:layout_marginStart="128dp"
+        android:layout_marginEnd="128dp"
+        android:layout_marginBottom="24dp"
+        android:alpha="1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/blurScreen"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/tapScreen"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.169"
         app:srcCompat="@android:drawable/ic_delete" />
 
     <me.itangqi.waveloadingview.WaveLoadingView
         android:id="@+id/wave"
         android:layout_width="wrap_content"
         android:layout_height="113dp"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentBottom="true"
 
-        android:layout_centerHorizontal="true"
-        android:layout_marginStart="-1dp"
-        android:layout_marginBottom="1dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
         app:wlv_borderColor="@color/colorAccent"
         app:wlv_borderWidth="0dp"
         app:wlv_progressValue="60"
@@ -91,18 +100,17 @@
         app:wlv_waveColor="#9d87a8" />
 
     <ImageView
-        android:clickable="true"
         android:id="@+id/tapScreen"
         android:layout_width="409dp"
         android:layout_height="731dp"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentEnd="true"
         android:layout_marginStart="2dp"
-        android:layout_marginTop="-2dp"
-        android:layout_marginEnd="0dp"
         android:alpha="0.1"
-        android:background="@drawable/bg_color" />
+        android:background="@drawable/bg_color"
+        android:clickable="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 
-</RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

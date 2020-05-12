@@ -82,9 +82,9 @@
         android:layout_marginStart="16dp"
         android:layout_marginLeft="16dp"
         android:layout_marginTop="36dp"
-        android:gravity="center"
+        android:textAlignment="textStart"
         android:text="@string/hintNombre"
-        android:textAlignment="center"
+
         android:textColor="#FFFFFF"
         android:textSize="18sp" />
 
@@ -109,9 +109,9 @@
         android:layout_marginStart="18dp"
         android:layout_marginLeft="18dp"
         android:layout_marginTop="119dp"
-        android:gravity="center"
+        android:textAlignment="textStart"
         android:text="@string/hintApellido"
-        android:textAlignment="center"
+
         android:textColor="#FFFFFF"
         android:textSize="18sp" />
 
@@ -127,7 +127,7 @@
         android:background="@drawable/textfield" />
 
     <TextView
-        android:layout_width="267dp"
+        android:layout_width="360dp"
         android:layout_height="36dp"
         android:layout_alignParentStart="true"
         android:layout_alignParentLeft="true"
@@ -136,9 +136,9 @@
         android:layout_marginStart="11dp"
         android:layout_marginLeft="11dp"
         android:layout_marginTop="187dp"
-        android:gravity="center"
         android:text="@string/hintTelefono"
-        android:textAlignment="center"
+        android:textAlignment="textStart"
+
         android:textColor="#FFFFFF"
         android:textSize="18sp" />
 
@@ -174,9 +174,9 @@
         android:layout_marginStart="-12dp"
         android:layout_marginLeft="-12dp"
         android:layout_marginTop="261dp"
-        android:gravity="center"
+        android:textAlignment="textStart"
         android:text="@string/hintContrasena"
-        android:textAlignment="center"
+
         android:textColor="#FFFFFF"
         android:textSize="18sp" />
 
@@ -201,9 +201,9 @@
         android:layout_marginStart="18dp"
         android:layout_marginLeft="18dp"
         android:layout_marginTop="335dp"
-        android:gravity="center"
+        android:textAlignment="textStart"
         android:text="@string/hintCorreo"
-        android:textAlignment="center"
+
         android:textColor="#FFFFFF"
         android:textSize="18sp" />
 
@@ -242,9 +242,9 @@
         android:layout_centerInParent="true"
         android:layout_marginLeft="85dp"
         android:layout_marginTop="527dp"
-        android:gravity="center"
+        android:textAlignment="textStart"
         android:text="@string/enunciadoIniciar"
-        android:textAlignment="center"
+
         android:textColor="#FFFFFF"
         android:textSize="22sp" />
 

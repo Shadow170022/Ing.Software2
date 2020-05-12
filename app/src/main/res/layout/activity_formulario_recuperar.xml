@@ -1,16 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 
-<RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relativeLayout4"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
     android:background="@drawable/bg_color"
 
-    >
+    tools:context=".MainActivity">
 
     <!--
   Font family: Another Danger - Demo
@@ -20,30 +19,32 @@
 
     <ImageView
         android:id="@+id/logo"
-        android:alpha="1"
         android:layout_width="151dp"
         android:layout_height="146dp"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentRight="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="96dp"
-        android:layout_marginEnd="127dp"
-        android:layout_marginRight="127dp"
+        android:layout_marginEnd="128dp"
+        android:layout_marginBottom="24dp"
+        android:alpha="1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/blurScreen"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.171"
         app:srcCompat="@android:drawable/ic_delete" />
-
 
 
     <me.itangqi.waveloadingview.WaveLoadingView
         android:id="@+id/wave"
         android:layout_width="wrap_content"
         android:layout_height="113dp"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentBottom="true"
 
-        android:layout_centerHorizontal="true"
-        android:layout_marginStart="-1dp"
-        android:layout_marginBottom="1dp"
+        android:alpha="0.8"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
         app:wlv_borderColor="@color/colorAccent"
         app:wlv_borderWidth="0dp"
         app:wlv_progressValue="60"
@@ -56,102 +57,120 @@
         app:wlv_titleTopStrokeWidth="3dp"
         app:wlv_triangle_direction="north"
         app:wlv_waveAmplitude="128"
-        android:alpha="0.8"
         app:wlv_waveColor="#00FFFF" />
 
     <ImageView
         android:id="@+id/blurScreen"
         android:layout_width="409dp"
         android:layout_height="731dp"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentEnd="true"
         android:layout_marginStart="2dp"
-        android:layout_marginTop="-2dp"
-        android:layout_marginEnd="0dp"
         android:alpha="0.7"
-        android:background="@drawable/bg_color" />
+        android:background="@drawable/bg_color"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
         android:id="@+id/textFieldTelefonoLada"
         android:layout_width="52dp"
         android:layout_height="35dp"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="78dp"
-        android:background="@drawable/textfield" />
+        android:layout_marginStart="40dp"
+        android:background="@drawable/textfield"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.125" />
 
     <TextView
+        android:id="@+id/textView3"
         android:layout_width="272dp"
-        android:layout_height="34dp"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
-        android:layout_centerInParent="true"
-        android:layout_marginStart="10dp"
-        android:layout_marginLeft="10dp"
-        android:layout_marginTop="117dp"
-        android:gravity="center"
+        android:layout_height="36dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="28dp"
+
         android:text="@string/hintCorreo"
-        android:textAlignment="center"
+        android:textAlignment="textStart"
         android:textColor="#FFFFFF"
-        android:textSize="18sp" />
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/blurScreen"
+        app:layout_constraintVertical_bias="0.208" />
 
     <EditText
         android:id="@+id/textFieldTelefono"
         android:layout_width="278dp"
         android:layout_height="35dp"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginStart="93dp"
-        android:layout_marginTop="78dp"
-        android:background="@drawable/textfield" />
+        android:layout_marginStart="108dp"
+        android:background="@drawable/textfield"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.125" />
 
     <TextView
+        android:id="@+id/textView4"
         android:layout_width="267dp"
         android:layout_height="36dp"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
-        android:layout_centerInParent="true"
-        android:layout_marginStart="8dp"
-        android:layout_marginLeft="8dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="28dp"
+
         android:layout_marginTop="43dp"
-        android:gravity="center"
         android:text="@string/hintTelefono"
-        android:textAlignment="center"
+        android:textAlignment="textStart"
         android:textColor="#FFFFFF"
-        android:textSize="18sp" />
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
 
     <EditText
         android:id="@+id/textFieldCorreo"
-        android:layout_width="339dp"
+        android:layout_width="342dp"
         android:layout_height="35dp"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_centerInParent="true"
-        android:layout_marginStart="35dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="40dp"
         android:layout_marginTop="156dp"
-        android:background="@drawable/textfield" />
+        android:background="@drawable/textfield"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.017" />
+
     <Button
         android:id="@+id/botonRecuperar"
         android:layout_width="194dp"
         android:layout_height="wrap_content"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginEnd="109dp"
-        android:layout_marginBottom="390dp"
+        android:layout_marginTop="35dp"
+        android:layout_marginEnd="108dp"
         android:background="@drawable/roundbutton"
+
         android:backgroundTint="#2AA3C9"
         android:fontFamily="@font/secular_one"
-
         android:text="@string/botonRecuperar"
         android:textColor="#FFFFFF"
-        android:textSize="22dp" />
+        android:textSize="22dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textFieldCorreo"
+        app:layout_constraintVertical_bias="0.029" />
 
 
-</RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
