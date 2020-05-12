@@ -1,16 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 
-<RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relativeLayout6"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
     android:background="@drawable/bg_color"
 
-    >
+    tools:context=".MainActivity">
 
     <!--
   Font family: Another Danger - Demo
@@ -20,30 +19,33 @@
 
     <ImageView
         android:id="@+id/logo"
-        android:alpha="1"
         android:layout_width="151dp"
         android:layout_height="146dp"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentRight="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="96dp"
-        android:layout_marginEnd="127dp"
-        android:layout_marginRight="127dp"
-        app:srcCompat="@android:drawable/ic_delete" />
-
+        android:layout_marginEnd="128dp"
+        android:layout_marginBottom="24dp"
+        android:alpha="1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/blurScreen"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.171"
+        app:srcCompat="@android:drawable/ic_delete"
+        tools:ignore="ContentDescription" />
 
 
     <me.itangqi.waveloadingview.WaveLoadingView
         android:id="@+id/wave"
         android:layout_width="wrap_content"
         android:layout_height="113dp"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentBottom="true"
 
-        android:layout_centerHorizontal="true"
         android:layout_marginStart="-1dp"
         android:layout_marginBottom="1dp"
+        android:alpha="0.8"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:wlv_borderColor="@color/colorAccent"
         app:wlv_borderWidth="0dp"
         app:wlv_progressValue="60"
@@ -56,214 +58,275 @@
         app:wlv_titleTopStrokeWidth="3dp"
         app:wlv_triangle_direction="north"
         app:wlv_waveAmplitude="128"
-        android:alpha="0.8"
         app:wlv_waveColor="#6CB3F3" />
 
     <ImageView
         android:id="@+id/blurScreen"
         android:layout_width="409dp"
         android:layout_height="731dp"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentEnd="true"
         android:layout_marginStart="2dp"
         android:layout_marginTop="-2dp"
         android:layout_marginEnd="0dp"
         android:alpha="0.6"
-        android:background="@drawable/bg_color" />
+        android:background="@drawable/bg_color"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="ContentDescription" />
 
     <TextView
+        android:id="@+id/textView7"
         android:layout_width="186dp"
         android:layout_height="41dp"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
-        android:layout_centerInParent="true"
-        android:layout_marginStart="16dp"
-        android:layout_marginLeft="16dp"
-        android:layout_marginTop="36dp"
-        android:textAlignment="textStart"
-        android:text="@string/hintNombre"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="28dp"
 
+        android:text="@string/hintNombre"
+        android:textAlignment="textStart"
         android:textColor="#FFFFFF"
-        android:textSize="18sp" />
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/blurScreen"
+        app:layout_constraintVertical_bias="0.055"
+        tools:ignore="RtlHardcoded" />
 
     <EditText
         android:id="@+id/textFieldNombre"
         android:layout_width="339dp"
         android:layout_height="35dp"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginStart="33dp"
-        android:layout_marginTop="79dp"
-        android:background="@drawable/textfield" />
+        android:layout_marginStart="32dp"
+        android:autofillHints="Name"
+        android:background="@drawable/textfield"
+        android:inputType="text"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.108"
+        tools:ignore="LabelFor" />
 
     <TextView
+        android:id="@+id/textView8"
         android:layout_width="199dp"
         android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
-        android:layout_centerInParent="true"
-        android:layout_marginStart="18dp"
-        android:layout_marginLeft="18dp"
-        android:layout_marginTop="119dp"
-        android:textAlignment="textStart"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="28dp"
         android:text="@string/hintApellido"
-
+        android:textAlignment="textStart"
         android:textColor="#FFFFFF"
-        android:textSize="18sp" />
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/blurScreen"
+        app:layout_constraintVertical_bias="0.176"
+        tools:ignore="RtlHardcoded" />
 
     <EditText
         android:id="@+id/textFieldApellidos"
         android:layout_width="339dp"
         android:layout_height="35dp"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginStart="34dp"
-        android:layout_marginTop="149dp"
-        android:background="@drawable/textfield" />
+        android:layout_marginStart="32dp"
+        android:autofillHints="Last Name"
+        android:background="@drawable/textfield"
+        android:inputType="text"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.23"
+        tools:ignore="LabelFor" />
 
     <TextView
+        android:id="@+id/textView9"
         android:layout_width="360dp"
         android:layout_height="36dp"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
-        android:layout_centerInParent="true"
-        android:layout_marginStart="11dp"
-        android:layout_marginLeft="11dp"
-        android:layout_marginTop="187dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="28dp"
+
         android:text="@string/hintTelefono"
         android:textAlignment="textStart"
-
         android:textColor="#FFFFFF"
-        android:textSize="18sp" />
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/blurScreen"
+        app:layout_constraintVertical_bias="0.309"
+        tools:ignore="RtlHardcoded" />
 
     <EditText
         android:id="@+id/textFieldTelefonoLada"
         android:layout_width="52dp"
         android:layout_height="35dp"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
         android:layout_marginStart="35dp"
         android:layout_marginTop="222dp"
-        android:background="@drawable/textfield" />
+        android:autofillHints="+00"
+        android:background="@drawable/textfield"
+        android:inputType="number"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="LabelFor" />
 
     <EditText
         android:id="@+id/textFieldTelefono"
         android:layout_width="278dp"
         android:layout_height="35dp"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
         android:layout_marginStart="96dp"
         android:layout_marginTop="222dp"
-        android:background="@drawable/textfield" />
+        android:autofillHints="Phone"
+        android:background="@drawable/textfield"
+        android:inputType="phone"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="LabelFor" />
 
     <TextView
+        android:id="@+id/textView10"
         android:layout_width="272dp"
         android:layout_height="34dp"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
-        android:layout_centerInParent="true"
-        android:layout_marginStart="-12dp"
-        android:layout_marginLeft="-12dp"
-        android:layout_marginTop="261dp"
-        android:textAlignment="textStart"
-        android:text="@string/hintContrasena"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="28dp"
 
+        android:text="@string/hintContrasena"
+        android:textAlignment="textStart"
         android:textColor="#FFFFFF"
-        android:textSize="18sp" />
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/blurScreen"
+        app:layout_constraintVertical_bias="0.436"
+        tools:ignore="RtlHardcoded" />
 
     <EditText
         android:id="@+id/textFieldContrasena"
         android:layout_width="339dp"
         android:layout_height="35dp"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_centerInParent="true"
-        android:layout_marginStart="38dp"
-        android:layout_marginTop="300dp"
-        android:background="@drawable/textfield" />
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="36dp"
+        android:autofillHints="Password"
+        android:background="@drawable/textfield"
+        android:inputType="textPassword"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/blurScreen"
+        app:layout_constraintVertical_bias="0.482"
+        tools:ignore="LabelFor" />
 
     <TextView
+        android:id="@+id/textView11"
         android:layout_width="272dp"
         android:layout_height="34dp"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
-        android:layout_centerInParent="true"
-        android:layout_marginStart="18dp"
-        android:layout_marginLeft="18dp"
-        android:layout_marginTop="335dp"
-        android:textAlignment="textStart"
-        android:text="@string/hintCorreo"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="28dp"
 
+        android:layout_marginTop="335dp"
+        android:text="@string/hintCorreo"
+        android:textAlignment="textStart"
         android:textColor="#FFFFFF"
-        android:textSize="18sp" />
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.041"
+        tools:ignore="RtlHardcoded" />
 
     <EditText
         android:id="@+id/textFieldCorreo"
         android:layout_width="339dp"
         android:layout_height="35dp"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_centerInParent="true"
-        android:layout_marginStart="38dp"
-        android:layout_marginTop="373dp"
-        android:background="@drawable/textfield" />
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="36dp"
+        android:autofillHints="Email"
+        android:background="@drawable/textfield"
+        android:inputType="textEmailAddress"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/blurScreen"
+        app:layout_constraintVertical_bias="0.61"
+        tools:ignore="LabelFor" />
 
     <Button
         android:id="@+id/botonRegistrar"
         android:layout_width="160dp"
         android:layout_height="58dp"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginEnd="126dp"
-        android:layout_marginBottom="181dp"
         android:background="@drawable/roundbutton"
         android:backgroundTint="#3E5286"
         android:fontFamily="@font/secular_one"
         android:text="@string/botonRegistrar"
         android:textColor="#FFFFFF"
-        android:textSize="22dp" />
+        android:textSize="22sp"
+        app:layout_constraintBottom_toBottomOf="@+id/wave"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.723" />
 
     <TextView
         android:id="@+id/enunciadoIniciar"
         android:layout_width="251dp"
         android:layout_height="44dp"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
-        android:layout_centerInParent="true"
-        android:layout_marginLeft="85dp"
-        android:layout_marginTop="527dp"
-        android:textAlignment="textStart"
-        android:text="@string/enunciadoIniciar"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
 
+        android:text="@string/enunciadoIniciar"
+        android:textAlignment="center"
         android:textColor="#FFFFFF"
-        android:textSize="22sp" />
+        android:textSize="22sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/blurScreen"
+        app:layout_constraintVertical_bias="0.855"
+        tools:ignore="RtlHardcoded" />
 
     <Button
         android:id="@+id/botonIniciar"
         android:layout_width="194dp"
         android:layout_height="wrap_content"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginEnd="102dp"
-        android:layout_marginBottom="26dp"
+        android:layout_marginEnd="108dp"
         android:background="@drawable/roundbutton"
         android:backgroundTint="#2AA3C9"
-        android:fontFamily="@font/secular_one"
 
+        android:fontFamily="@font/secular_one"
         android:text="@string/botonIniciar"
         android:textColor="#FFFFFF"
-        android:textSize="22dp" />
+        android:textSize="22sp"
+        app:layout_constraintBottom_toBottomOf="@+id/wave"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.944" />
 
 
-</RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
