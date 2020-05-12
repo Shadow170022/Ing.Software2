@@ -7,27 +7,27 @@ import android.widget.Button;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-public class Enviar_Codigo_1 extends AppCompatActivity {
+public class Formulario_Recuperar extends AppCompatActivity {
 
-    private Button button1;
+    private Button recuperar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_enviar__codigo_1);
+        setContentView(R.layout.activity_formulario_recuperar);
 
-        button1 = findViewById(R.id.botonValidar);
+        recuperar = findViewById(R.id.botonRecuperar);
 
-        button1.setOnClickListener(new View.OnClickListener() {
+        recuperar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                openLoading_Screen();
+                openEnviar_Codigo_2();
             }
         });
     }
 
-    public void openLoading_Screen(){
-        Intent intent = new Intent(this, Loading_Screen.class);
+    public void openEnviar_Codigo_2() {
+        Intent intent = new Intent(this, Enviar_Codigo_2.class);
         startActivity(intent);
     }
 }

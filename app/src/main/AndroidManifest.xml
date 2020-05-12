@@ -9,9 +9,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".formulario_cambiar"></activity>
-        <activity android:name=".formulario_recuperar" />
-        <activity android:name=".enviar_codigo_2" />
+        <activity android:name=".Formulario_Cambiar"></activity>
+        <activity android:name=".Formulario_Recuperar" />
+        <activity android:name=".Enviar_Codigo_2" />
         <activity android:name=".Enviar_Codigo_1" />
         <activity android:name=".Loading_Screen" />
         <activity android:name=".Formulario_Login" />

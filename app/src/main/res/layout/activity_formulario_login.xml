@@ -168,6 +168,7 @@
         android:textSize="22sp" />
 
     <TextView
+        android:clickable="true"
         android:id="@+id/preguntaContrasena"
         android:layout_width="282dp"
         android:layout_height="43dp"

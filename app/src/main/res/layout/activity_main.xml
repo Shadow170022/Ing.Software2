@@ -90,20 +90,8 @@
         app:wlv_waveAmplitude="128"
         app:wlv_waveColor="#9d87a8" />
 
-    <Button
-        android:id="@+id/button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginStart="164dp"
-        android:layout_marginLeft="164dp"
-        android:layout_marginTop="450dp"
-        android:text="Next" />
-
     <ImageView
+        android:clickable="true"
         android:id="@+id/tapScreen"
         android:layout_width="409dp"
         android:layout_height="731dp"
