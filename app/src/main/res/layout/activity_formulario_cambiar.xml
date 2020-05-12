@@ -31,7 +31,8 @@
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.171"
-        app:srcCompat="@android:drawable/ic_delete" />
+        app:srcCompat="@android:drawable/ic_delete"
+        tools:ignore="ContentDescription" />
 
     <me.itangqi.waveloadingview.WaveLoadingView
         android:id="@+id/wave"
@@ -70,7 +71,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="ContentDescription" />
 
     <TextView
         android:id="@+id/textView"
@@ -101,7 +103,10 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:autofillHints="Password"
+        android:inputType="textPassword"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="LabelFor" />
 
     <TextView
         android:id="@+id/textView2"
@@ -136,7 +141,10 @@
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.061" />
+        android:autofillHints="Password"
+        android:inputType="textPassword"
+        app:layout_constraintVertical_bias="0.061"
+        tools:ignore="LabelFor" />
 
     <Button
         android:id="@+id/botonCambiar"
@@ -150,7 +158,7 @@
         android:fontFamily="@font/secular_one"
         android:text="@string/botonCambiar"
         android:textColor="#FFFFFF"
-        android:textSize="22dp"
+        android:textSize="22sp"
         app:layout_constraintBottom_toTopOf="@+id/wave"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"

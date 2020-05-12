@@ -30,7 +30,8 @@
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.171"
-        app:srcCompat="@android:drawable/ic_delete" />
+        app:srcCompat="@android:drawable/ic_delete"
+        tools:ignore="ContentDescription" />
 
 
     <me.itangqi.waveloadingview.WaveLoadingView
@@ -69,7 +70,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="ContentDescription" />
 
     <EditText
         android:id="@+id/textFieldTelefonoLada"
@@ -82,7 +84,10 @@
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.125" />
+        android:autofillHints="+00"
+        android:inputType="number"
+        app:layout_constraintVertical_bias="0.125"
+        tools:ignore="LabelFor" />
 
     <TextView
         android:id="@+id/textView3"
@@ -114,7 +119,10 @@
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.125" />
+        android:autofillHints="Phone"
+        android:inputType="phone"
+        app:layout_constraintVertical_bias="0.125"
+        tools:ignore="LabelFor" />
 
     <TextView
         android:id="@+id/textView4"
@@ -150,7 +158,10 @@
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.017" />
+        android:autofillHints="email"
+        android:inputType="textEmailAddress"
+        app:layout_constraintVertical_bias="0.017"
+        tools:ignore="LabelFor" />
 
     <Button
         android:id="@+id/botonRecuperar"
@@ -164,7 +175,7 @@
         android:fontFamily="@font/secular_one"
         android:text="@string/botonRecuperar"
         android:textColor="#FFFFFF"
-        android:textSize="22dp"
+        android:textSize="22sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"

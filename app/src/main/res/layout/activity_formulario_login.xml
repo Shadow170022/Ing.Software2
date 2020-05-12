@@ -30,7 +30,8 @@
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.171"
-        app:srcCompat="@android:drawable/ic_delete" />
+        app:srcCompat="@android:drawable/ic_delete"
+        tools:ignore="ContentDescription" />
 
 
     <me.itangqi.waveloadingview.WaveLoadingView
@@ -69,7 +70,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="ContentDescription" />
 
     <EditText
         android:id="@+id/textFieldTelefonoLada"
@@ -82,7 +84,10 @@
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.125" />
+        android:autofillHints="+00"
+        android:inputType="number"
+        app:layout_constraintVertical_bias="0.125"
+        tools:ignore="LabelFor" />
 
     <TextView
         android:id="@+id/textView5"
@@ -92,7 +97,7 @@
         android:layout_centerVertical="true"
         android:layout_marginStart="28dp"
 
-        android:text="@string/hintContrasena"
+        android:text="@string/hintTelefono"
         android:textAlignment="textStart"
         android:textColor="#FFFFFF"
         android:textSize="18sp"
@@ -114,7 +119,10 @@
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.125" />
+        android:autofillHints=""
+        android:inputType="phone"
+        app:layout_constraintVertical_bias="0.125"
+        tools:ignore="LabelFor" />
 
     <TextView
         android:id="@+id/textView6"
@@ -125,7 +133,7 @@
         android:layout_marginStart="28dp"
 
         android:layout_marginTop="43dp"
-        android:text="@string/hintTelefono"
+        android:text="@string/hintContrasena"
         android:textAlignment="textStart"
         android:textColor="#FFFFFF"
         android:textSize="18sp"
@@ -150,7 +158,10 @@
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.012" />
+        android:autofillHints=""
+        android:inputType="textPassword"
+        app:layout_constraintVertical_bias="0.012"
+        tools:ignore="LabelFor" />
 
     <Button
         android:id="@+id/botonRegistrar"
@@ -161,7 +172,7 @@
         android:fontFamily="@font/secular_one"
         android:text="@string/botonRegistrar"
         android:textColor="#FFFFFF"
-        android:textSize="22dp"
+        android:textSize="22sp"
         app:layout_constraintBottom_toBottomOf="@+id/wave"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.49"
@@ -206,6 +217,7 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintStart_toStartOf="parent"
+        android:focusable="true"
         app:layout_constraintTop_toTopOf="@+id/blurScreen" />
 
     <Button
@@ -219,7 +231,7 @@
 
         android:text="@string/botonIniciar"
         android:textColor="#FFFFFF"
-        android:textSize="22dp"
+        android:textSize="22sp"
         app:layout_constraintBottom_toBottomOf="@+id/wave"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"

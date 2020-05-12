@@ -48,7 +48,8 @@
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.171"
-        app:srcCompat="@android:drawable/ic_delete" />
+        app:srcCompat="@android:drawable/ic_delete"
+        tools:ignore="ContentDescription" />
 
 
     <me.itangqi.waveloadingview.WaveLoadingView
@@ -88,7 +89,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="ContentDescription" />
 
     <TextView
         android:id="@+id/preguntaUsuario"
@@ -120,7 +122,7 @@
         android:fontFamily="@font/secular_one"
         android:text="@string/botonRegistrar"
         android:textColor="#FFFFFF"
-        android:textSize="22dp"
+        android:textSize="22sp"
 
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -162,7 +164,7 @@
 
         android:text="@string/botonIniciar"
         android:textColor="#FFFFFF"
-        android:textSize="22dp"
+        android:textSize="22sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"

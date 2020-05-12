@@ -66,13 +66,13 @@
         android:layout_marginBottom="24dp"
         android:alpha="1"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/blurScreen"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintStart_toStartOf="@+id/tapScreen"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.169"
-        app:srcCompat="@android:drawable/ic_delete" />
+        app:srcCompat="@android:drawable/ic_delete"
+        tools:ignore="ContentDescription" />
 
     <me.itangqi.waveloadingview.WaveLoadingView
         android:id="@+id/wave"
@@ -110,7 +110,9 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:focusable="true"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="ContentDescription" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
