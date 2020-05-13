@@ -59,7 +59,6 @@ public class Formulario_Sign_In extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 registrarUsuario();
-                registrarClase();
                 //openEnviar_Codigo_1();
             }
         });
@@ -141,8 +140,5 @@ public class Formulario_Sign_In extends AppCompatActivity {
             Toast.makeText(this, "NO DEBE HABER CAMPOS VACIOS", Toast.LENGTH_LONG).show();
         }
 
-    }
-
-    public void registrarClase() {
     }
 }
