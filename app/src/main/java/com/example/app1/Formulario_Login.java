@@ -107,12 +107,12 @@ public class Formulario_Login extends AppCompatActivity {
                     public void onComplete(@NonNull Task<AuthResult> task) {
                         if (task.isSuccessful()) {
                             int pos = correo.indexOf("@");
-                            String user = correo.substring(0, pos);
+                            String usuario = correo.substring(0, pos);
                             Toast.makeText(Formulario_Login.this, "Bienvenido: " + txtCorreo.getText(), Toast.LENGTH_LONG).show();
-                            startActivity(intent);
-                            //Intent intencion = new Intent(getApplication(), Loading_Screen.class);
-                            //intencion.putExtra(Loading_Screen.user, user);
-                            //startActivity(intencion);
+                            //startActivity(intent);
+                            Intent abrirMapa = new Intent(getApplication(), Map_Screen.class);
+                            abrirMapa.putExtra(Map_Screen.usuario, usuario);
+                            startActivity(abrirMapa);
 
                         } else {
                             if (task.getException() instanceof FirebaseAuthUserCollisionException) {

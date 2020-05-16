@@ -73,5 +73,13 @@
         CAMBIAR
     </string>
 
+    <string name="mensajito">
+        Hola
+    </string>
+
+    <string name="mensajito2">
+        :3
+    </string>
+
 
 </resources>
