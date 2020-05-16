@@ -117,7 +117,6 @@ public class Formulario_Sign_In extends AppCompatActivity {
                     .addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {
                         @Override
                         public void onComplete(@NonNull Task<AuthResult> task) {
-                            //checking if success
                             if (task.isSuccessful()) {
 
                                 String idUsuario = baseDeDatos.push().getKey();
