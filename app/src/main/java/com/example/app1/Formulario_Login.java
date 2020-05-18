@@ -110,8 +110,8 @@ public class Formulario_Login extends AppCompatActivity {
                             String usuario = correo.substring(0, pos);
                             Toast.makeText(Formulario_Login.this, "Bienvenido: " + txtCorreo.getText(), Toast.LENGTH_LONG).show();
                             //startActivity(intent);
-                            Intent abrirMapa = new Intent(getApplication(), Map_Screen.class);
-                            abrirMapa.putExtra(Map_Screen.usuario, usuario);
+                            Intent abrirMapa = new Intent(getApplication(), Mapa.class);
+                            abrirMapa.putExtra(Mapa.usuario, usuario);
                             startActivity(abrirMapa);
 
                         } else {

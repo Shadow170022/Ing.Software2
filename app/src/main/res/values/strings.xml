@@ -81,5 +81,21 @@
         :3
     </string>
 
+    <string name="hintOrigen">
+        Introduce tu dirección
+    </string>
+
+    <string name="hintDestino">
+        Introduce el destino
+    </string>
+
+    <string name="title_activity_mapa">
+        Map
+    </string>
+
+    <string name="botonSolicitar">
+        SOLICITAR
+    </string>
+
 
 </resources>
