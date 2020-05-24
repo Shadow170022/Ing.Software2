@@ -159,6 +159,7 @@ public class Mapa extends FragmentActivity implements OnMapReadyCallback {
 
         Location location = locationManager.getLastKnownLocation(provider);
 
+
         if (location != null) {
             // Getting latitude of the current location
             double latitude = location.getLatitude();
@@ -204,7 +205,7 @@ public class Mapa extends FragmentActivity implements OnMapReadyCallback {
     }
 
     public void openMapa() {
-        Intent intent = new Intent(this, Mapa.class);
+        Intent intent = new Intent(this, Map_Screen.class);
         startActivity(intent);
     }
 

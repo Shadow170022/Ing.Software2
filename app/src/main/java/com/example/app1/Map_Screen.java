@@ -3,6 +3,7 @@ package com.example.app1;
 import android.content.Intent;
 import android.graphics.Color;
 import android.graphics.drawable.Drawable;
+import android.location.Location;
 import android.os.Bundle;
 import android.text.Editable;
 import android.text.TextWatcher;
@@ -11,20 +12,39 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.graphics.drawable.DrawableCompat;
 
-public class Map_Screen extends AppCompatActivity {
+import com.mapbox.android.core.location.LocationEngine;
+import com.mapbox.android.core.permissions.PermissionsListener;
+import com.mapbox.android.core.permissions.PermissionsManager;
+import com.mapbox.mapboxsdk.Mapbox;
+import com.mapbox.mapboxsdk.maps.MapView;
+import com.mapbox.mapboxsdk.maps.MapboxMap;
+import com.mapbox.mapboxsdk.maps.OnMapReadyCallback;
+import com.mapbox.mapboxsdk.maps.Style;
+
+import java.util.List;
 
 
+public class Map_Screen extends AppCompatActivity implements OnMapReadyCallback, PermissionsListener {
+
+
+    private MapView mapView;
     public static String usuario = "nombre";
     TextView textUser;
     EditText origen, destino;
     Button btnSolicitar;
+    private MapboxMap map;
+    private PermissionsManager permissionsManager;
+    private LocationEngine locationEngine;
+    private Location originLocation;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        Mapbox.getInstance(this, "pk.eyJ1IjoiMTcwMDIyIiwiYSI6ImNrYWQzYmI1bTIwZXgycXBtbDYxc2hqdW4ifQ.p7LIDuCPpL6fm-327JLpSQ");
         setContentView(R.layout.activity_map__screen);
 
         textUser = findViewById(R.id.txtUsuario);
@@ -32,9 +52,25 @@ public class Map_Screen extends AppCompatActivity {
         destino = findViewById(R.id.textFieldDestino);
         btnSolicitar = findViewById(R.id.botonSolicitar);
 
+        //----------------- MAP BOX --------------------------------------------------------------------->
 
-        //the color is a direct color int and not a color resource
+        mapView = findViewById(R.id.mapView);
+        mapView.onCreate(savedInstanceState);
+        mapView.getMapAsync(new OnMapReadyCallback() {
+            @Override
+            public void onMapReady(@NonNull MapboxMap mapboxMap) {
+                mapboxMap.setStyle(Style.MAPBOX_STREETS, new Style.OnStyleLoaded() {
+                    @Override
+                    public void onStyleLoaded(@NonNull Style style) {
 
+// Map is set up and the style has loaded. Now you can add data or make other map adjustments.
+
+
+                    }
+                });
+            }
+        });
+        //<----------------- MAP BOX ---------------------------------------------------------------------
 
         destino.addTextChangedListener(new TextWatcher() {
 
@@ -75,5 +111,62 @@ public class Map_Screen extends AppCompatActivity {
     public void openMapa() {
         Intent intent = new Intent(this, Mapa.class);
         startActivity(intent);
+    }
+
+    @Override
+    public void onStart() {
+        super.onStart();
+        mapView.onStart();
+    }
+
+    @Override
+    public void onResume() {
+        super.onResume();
+        mapView.onResume();
+    }
+
+    @Override
+    public void onPause() {
+        super.onPause();
+        mapView.onPause();
+    }
+
+    @Override
+    public void onStop() {
+        super.onStop();
+        mapView.onStop();
+    }
+
+    @Override
+    public void onLowMemory() {
+        super.onLowMemory();
+        mapView.onLowMemory();
+    }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        mapView.onDestroy();
+    }
+
+    @Override
+    protected void onSaveInstanceState(Bundle outState) {
+        super.onSaveInstanceState(outState);
+        mapView.onSaveInstanceState(outState);
+    }
+
+    @Override
+    public void onExplanationNeeded(List<String> permissionsToExplain) {
+
+    }
+
+    @Override
+    public void onPermissionResult(boolean granted) {
+
+    }
+
+    @Override
+    public void onMapReady(@NonNull MapboxMap mapboxMap) {
+
     }
 }

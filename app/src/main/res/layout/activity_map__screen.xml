@@ -8,6 +8,7 @@
     tools:context=".Map_Screen">
 
     <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout3"
         android:layout_width="408dp"
         android:layout_height="90dp"
         android:alpha="0.5"
@@ -36,6 +37,7 @@
 
 
     <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout4"
         android:layout_width="405dp"
         android:layout_height="158dp"
         android:alpha="0.7"
@@ -120,6 +122,17 @@
             tools:ignore="LabelFor" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <com.mapbox.mapboxsdk.maps.MapView
+        android:id="@+id/mapView"
+        android:layout_width="408dp"
+        android:layout_height="405dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.333"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.358" />
 
     <Button
         android:id="@+id/botonSolicitar"
