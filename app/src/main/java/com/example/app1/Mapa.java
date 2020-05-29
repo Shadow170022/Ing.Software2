@@ -92,7 +92,7 @@ public class Mapa extends FragmentActivity implements OnMapReadyCallback {
         icoOpciones.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                loadPanel();
+                setContentView(R.layout.activity_configuracion);
             }
         });
         
