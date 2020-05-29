@@ -19,6 +19,7 @@ import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseAuthUserCollisionException;
 
+//Clase para el ingreso del usuario
 public class Formulario_Login extends AppCompatActivity {
 
     EditText txtContrasena, txtCorreo;
