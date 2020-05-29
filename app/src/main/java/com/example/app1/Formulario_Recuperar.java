@@ -26,6 +26,7 @@ public class Formulario_Recuperar extends AppCompatActivity {
         });
     }
 
+    //Código para enviar un código de recuperación
     public void openEnviar_Codigo_2() {
         Intent intent = new Intent(this, Enviar_Codigo_2.class);
         startActivity(intent);
