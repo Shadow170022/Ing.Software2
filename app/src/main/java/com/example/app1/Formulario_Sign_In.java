@@ -20,6 +20,9 @@ import com.google.firebase.auth.FirebaseAuthUserCollisionException;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
+//Clase para Formulario de ingreso
+/*Es importante recalcar que este formulario limita a que solo se pueda tener una cuenta por correo
+lo que hace una app más segura*/
 public class Formulario_Sign_In extends AppCompatActivity {
 
     private static final String TAG = "MainActivity";
@@ -86,6 +89,7 @@ public class Formulario_Sign_In extends AppCompatActivity {
         startActivity(intent);
     }
 
+    //Validación del registro del usuario
     private void registrarUsuario() {
 
         String email = txtCorreo.getText().toString().trim();
@@ -112,7 +116,7 @@ public class Formulario_Sign_In extends AppCompatActivity {
             progressDialog.setMessage("Realizando registro en linea...");
             progressDialog.show();
 
-            //creating a new user
+            //Creación de un nuevo usuario
             firebaseAuth.createUserWithEmailAndPassword(email, password)
                     .addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {
                         @Override
@@ -136,7 +140,7 @@ public class Formulario_Sign_In extends AppCompatActivity {
                         }
                     });
         } else {
-            Toast.makeText(this, "NO DEBE HABER CAMPOS VACIOS", Toast.LENGTH_LONG).show();
+            Toast.makeText(this, "NO DEBE HABER CAMPOS VACIOS", Toast.LENGTH_LONG).show(); //Validación de campos vacios. 
         }
 
     }
