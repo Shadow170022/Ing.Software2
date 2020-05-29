@@ -39,6 +39,7 @@ public class Mapa extends FragmentActivity implements OnMapReadyCallback {
     Button btnSolicitar;
     private GoogleMap mMap;
     private ImageView icoOpciones;
+    private ImageView imageView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -50,6 +51,8 @@ public class Mapa extends FragmentActivity implements OnMapReadyCallback {
         destino = findViewById(R.id.textFieldDestino);
         btnSolicitar = findViewById(R.id.botonSolicitar);
         icoOpciones = findViewById(R.id.icoOpciones);
+        imageView = findViewById(R.id.imageView);
+        
 
         destino.addTextChangedListener(new TextWatcher() {
 
@@ -91,6 +94,13 @@ public class Mapa extends FragmentActivity implements OnMapReadyCallback {
                 loadPanel();
             }
         });
+        
+        imageView.setOnClickListener((new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                setContentView(R.layout.foto_perfil);
+            }
+        }));
 
         if (ContextCompat.checkSelfPermission(Mapa.this,
                 Manifest.permission.ACCESS_FINE_LOCATION)
