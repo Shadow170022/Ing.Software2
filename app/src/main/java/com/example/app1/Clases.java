@@ -9,7 +9,7 @@ public class Clases {
     String telefono;
     String contrasena;
     String correo;
-
+//En este apartado se tomarán los datos del usuario y se guardarán en la BD que se creó
     public Clases(String idUsuario, String nombre, String apellidos, String lada, String telefono, String contrasena, String correo) {
         this.idUsuario = idUsuario;
         this.nombre = nombre;
