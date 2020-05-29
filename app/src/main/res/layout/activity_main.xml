@@ -26,7 +26,7 @@
         android:layout_marginEnd="28dp"
         android:fontFamily="@font/another_danger"
 
-        android:text="@string/nombre_app"
+        android:text="Easy Rides"
         android:textAlignment="center"
         android:textColor="#704577"
         android:textSize="62sp"
