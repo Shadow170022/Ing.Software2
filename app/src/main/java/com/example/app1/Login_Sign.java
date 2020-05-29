@@ -6,7 +6,8 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-
+//Módulo para inicio de sesión 
+//Formulario  conectado con la Base de Datos
 public class Login_Sign extends AppCompatActivity {
 
     private Button button1;
